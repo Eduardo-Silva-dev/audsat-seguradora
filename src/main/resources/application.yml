@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+audsat:
+  openapi:
+    dev-url: http://localhost:8080
+    prod-url: https://seguradora-api.com
+
+api:
+  security:
+    token:
+      secret: ${JWT_SECRET:my-secret-key}

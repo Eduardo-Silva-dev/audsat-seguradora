@@ -64,7 +64,7 @@ public class OpenAPIConfig {
                 .description("security description");
 
         return new OpenAPI().info(info).addSecurityItem(
-                new SecurityRequirement().addList(schemeName))
+                        new SecurityRequirement().addList(schemeName))
                 .components(new Components().addSecuritySchemes(schemeName, securityScheme))
                 .servers(List.of(devServer, prodServer));
     }

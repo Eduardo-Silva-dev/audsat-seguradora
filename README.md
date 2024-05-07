@@ -9,7 +9,6 @@ This project is an API built using **Java, Java Spring, H2 as the database and S
 ## Table of Contents
 
 - [Installation](#installation)
-- [Configuration](#configuration)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Authentication](#authentication)
